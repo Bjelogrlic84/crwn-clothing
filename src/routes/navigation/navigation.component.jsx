@@ -6,21 +6,24 @@ import {ReactComponent as CrwnLogo} from '../../assets/crown.svg';
 import './navigation.styles.scss';
 
 const Navigation = () => {
-    return (
-      <Fragment>
-        <div className="navigation">
-          <Link className="logo-container" to="/" title="Logo">
-            <CrwnLogo className="logo"/>        
+  return (
+    <Fragment>
+      <div className='navigation'>
+        <Link className='logo-container' to='/'>
+          <CrwnLogo className='logo' />
+        </Link>
+        <div className='nav-links-container'>
+          <Link className='nav-link' to='/shop'>
+            SHOP
           </Link>
-          <div className="nav-links-container">
-            <Link className="nav-link" to="/shop">
-                SHOP            
-            </Link>
-          </div>
+          <Link className='nav-link' to='/sign-in'>
+            SIGN IN
+          </Link>
         </div>
-        <Outlet />
-      </Fragment>
-    );
-  };
+      </div>
+      <Outlet />
+    </Fragment>
+  );
+};
 
 export default Navigation;
