@@ -11,7 +11,7 @@ export const CategoryContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 25px;
-    margin-left: 4%;
+    margin-left: 5%;
   }
 `;
 
